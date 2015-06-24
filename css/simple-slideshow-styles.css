@@ -95,6 +95,7 @@
   left: 5px;   
   cursor: pointer;    
   opacity: .3;
+  z-index: 4;
 } 
 .bss-fullscreen:hover{
   opacity: .8;   
