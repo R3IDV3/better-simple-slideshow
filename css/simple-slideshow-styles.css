@@ -66,6 +66,11 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 }
 .bss-next:hover, .bss-prev:hover{
   cursor: pointer;
@@ -96,6 +101,11 @@
   cursor: pointer;    
   opacity: .3;
   z-index: 4;
+  -webkit-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
 } 
 .bss-fullscreen:hover{
   opacity: .8;   
