@@ -14,7 +14,8 @@ var makeBSS = function (el, options) {
                     speed: (typeof options.auto.speed === "undefined") ? 1500 : options.auto.speed,
                     pauseOnHover: (typeof options.auto.pauseOnHover === "undefined") ? false : options.auto.pauseOnHover,
                     fullScreen: (typeof options.fullScreen === "undefined") ? false : options.fullScreen,
-                    swipe: (typeof options.swipe === "undefined") ? false : options.swipe
+                    swipe: (typeof options.swipe === "undefined") ? false : options.swipe,
+                    controls: (typeof options.controls === "undefined") ? true : options.controls
                 };
                 
                 this.$items[0].classList.add('bss-show'); // add show class to first figure 
@@ -159,3 +160,15 @@ var makeBSS = function (el, options) {
         $slideshow.init(el, options);
     });
 };
+
+var opts = {
+	auto : {
+		speed : 5000,
+		pauseOnHover : false
+	},
+	fullScreen : false,
+	swipe : false,
+	controls : false
+};
+
+makeBSS('.slideshow-class-goes-here', opts);
