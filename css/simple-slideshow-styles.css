@@ -1,3 +1,33 @@
+/* Background Implementation Styles */
+.bss-background { /* Parent must be position: relative; as this container fills it */
+	position: relative; /* So figures can fill this container */
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	width: 100%; 
+	height: 100%;
+	clear: both;
+	z-index: -1; /* Lies behind its parent */
+}
+.bss-slides.bss-background figure { /* Figures have the background-image property */
+	background-size: cover; /* How the background will behave */
+	background-position: center center;
+	position: absolute; /* VERY important as this keeps the figures stacked on one another */
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	width: 100%; 
+	height: 100%;
+	opacity: 0;
+	-webkit-transition: opacity 1.2s;
+	transition: opacity 1.2s;
+	margin: 0;
+}
+.bss-slides.bss-background figure.bss-show {
+	opacity: 1;
+}
+
+/* Original Styles */
 .bss-slides{
   position: relative;
   display: block;    
